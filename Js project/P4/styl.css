@@ -9,7 +9,71 @@ body{
     font-family: 'Roboto', sans-serif;
     overflow-x: hidden;
     margin: 0;
-    background-color: #333;
-    color: #222;
+    background-color: #0f51a7;
+    color: white;
     /* color: white; */
+}
+.container{
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    margin: 0 auto;
+    max-width: 100%;
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    margin-top: 650px;
+}
+.search.active{
+    border: 2px solid #3498db;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    animation: rozsuwanie 0.5s ease;
+}
+.search.deactive{
+    animation: zasuwanie 0.5s ease;
+    display: flex;
+}
+.input.deactive{
+    opacity: 0;
+}
+.btn{
+    padding: 14px;
+    background-color: white;
+    border: solid 1px white;
+}
+.btn.deactive{
+    position: absolute;
+    right: 0;
+    left:190px;
+    width: 50px;
+}
+.input{
+    padding: 15px;
+    border: none;
+    flex:1;
+    outline: none;
+}
+.btn:hover{
+    background-color: aliceblue;
+    cursor: pointer;
+}
+@keyframes rozsuwanie{
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+@keyframes zasuwanie{
+    0%{
+        transform: scale(0.5);
+    }
+    100%{
+        transform: scale(1);
+    }
 }
