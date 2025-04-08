@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+    margin: 0;
+    background-color: white;
+    color: white;
+    position: relative;
+}
+
+.container {
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+.right {
+    background-image: url('https://wallpapers.com/images/hd/playstation-ps5-console-nsndc8ewygduy1nh.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 80%;
+    height: 100vh;
+    position: relative; 
+}
+
+.left {
+    background-image: url('https://hdtvpolska.com/wp-content/uploads/2024/06/xbox-series-x-digital-konsola-bez-nape%CC%A8du-nowa-2024.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 80%;
+    height: 100vh;
+    position: relative;
+}
+
+.left h1 {
+    position: absolute;
+    top: 40%;
+    left: 50%; 
+    transform: translateX(-50%);
+    font-size: 50px;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: left 0.4s ease; 
+}
+
+.right h1 {
+    position: absolute;
+    top: 40%;
+    left: 50%; 
+    transform: translateX(-50%);
+    font-size: 50px;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: left 0.4s ease; 
+}
+
+.ps {
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    transform: translateX(-50%);
+    color: white;
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 10px 40px;
+    text-transform: uppercase;
+    transition: left 0.4s ease; 
+}
+
+.xbox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 10px 40px;
+    text-transform: uppercase;
+    transition: left 0.4s ease; 
+}
+
+.left,
+.right {
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    transition: width 0.4s ease;
+}
+
+.left.active,
+.right.active {
+    width: 75%;
+}
+
+.left.unactive,
+.right.unactive {
+    width: 25%;
+}
+
+.left.active h1,
+.right.active h1 {
+    font-size: 50px;
+}
+
+.left.unactive h1,
+.right.unactive h1 {
+    font-size: 30px;
+}
+
+.ps:hover {
+    background-color: rgb(40, 48, 165);
+    border: 2px solid rgb(40, 48, 165);
+}
+
+.xbox:hover {
+    background-color: rgb(61, 165, 40);
+    border: 2px solid rgb(61, 165, 40);
+}
