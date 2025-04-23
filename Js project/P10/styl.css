@@ -5,3 +5,49 @@
     margin: 0;
     box-sizing: border-box;
 }
+body{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 60vh;
+    background-color: rgb(61, 94, 240);
+}
+.container{
+    text-align: center;
+    margin-top: 500px;
+    width: 600px;
+    height: 320px;
+    font-size: 25px;
+    padding: 20px 10px;
+    font-weight: 200;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.3);
+}
+.btn{
+    cursor: pointer;
+    background-color: rgb(106, 45, 218);
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    font-size: 14px;
+    margin: 5px;
+    padding: 5px 15px;
+    font-size: 20px;
+    margin-top: 10px;
+}
+p{
+    margin-top: 20px;
+    font-style: italic;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.joke{
+    margin-top: 70px;
+    height: 100px;
+    font-size: 21px;
+}
+.btn:hover{
+    transform: scale(0.95);
+}
