@@ -24,10 +24,6 @@ h2{
     margin-top: 20px;
     text-align: center;
 }
-p{
-    margin: 10px;
-    font-size: 15px;
-}
 .btn_h2{
     display: flex;
     justify-content: space-between;
@@ -51,6 +47,7 @@ p{
 .answer{
     opacity: 1;
     margin: 20px;
+    font-size: 13px;
 }
 .answer.hide{
     opacity: 0;
