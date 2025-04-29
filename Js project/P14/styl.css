@@ -1,7 +1,94 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+body {
+    font-family: Impact, sans-serif;
+}
+.top {
+    width: 100%;
+    height: 50vh;
+    background: rgb(180, 221, 240);
+}
+.bottom {
+    width: 100%;
+    height: 50vh;
+    background: #333cc4;
+}
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    width: 300px;
+    height: 60px;
+    border-radius: 3px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition: width 0.5s ease, height 0.5s ease;
+}
+.center.shrink {
+    width: 60px;
+    height: 60px;
+}
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+.center.shrink button:not(.close) {
+    transform: rotateY(360deg);
+    opacity: 0;
+}
+.close {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: none;
+}
+.center.shrink .close {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 60px;
+}
+.close i {
+    font-size: 20px;
+    transition: opacity 0.5s ease;
+}
+.center.shrink .close i {
+    opacity: 0;
+}
+.close::before,
+.close::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 2px;
+    background: black;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    opacity: 0;
+}
+.center.shrink .close::before,
+.center.shrink .close::after {
+    opacity: 1;
+}
+.center.shrink .close::before {
+    transform: translateX(-50%) translateY(-4px);
+}
+.center.shrink .close::after {
+    transform: translateX(-50%) translateY(4px);
 }
