@@ -5,3 +5,85 @@
     margin: 0;
     box-sizing: border-box;
 }
+body{
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+    overflow: hidden;
+    margin: 0;
+    background-color: white;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.theme{
+    margin-bottom: 70px;
+}
+button.dark{
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button.white{
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.clock{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    margin: 50px auto;
+}
+
+.hand{
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform-origin: bottom;
+    background: black;
+}
+
+.hour-hand{
+    width: 2px;
+    height: 90px;
+}
+
+.minute-hand{
+    width: 2px;
+    height: 120px;
+}
+
+.second-hand{
+    width: 2px;
+    height: 130px;
+    background: red;
+}
+
+.center{
+    width: 10px;
+    height: 10px;
+    background: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.time{
+    margin-top: 80px;
+    font-size: 70px;
+    margin-bottom: 20px;
+}
+.date{
+    font-size: 17px;
+}
