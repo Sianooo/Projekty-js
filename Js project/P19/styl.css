@@ -29,8 +29,7 @@ body{
     position: relative;
     overflow: hidden;
 }
-
-.btn .ripple {
+.btn .ripple{
     position: absolute;
     border-radius: 50%;
     transform: scale(0);
@@ -38,8 +37,7 @@ body{
     background-color: rgba(255, 255, 255, 0.7);
     pointer-events: none;
 }
-
-@keyframes ripple-effect {
+@keyframes ripple-effect{
     to {
         transform: scale(4);
         opacity: 0;
