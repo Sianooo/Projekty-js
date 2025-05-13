@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    margin-top: 70px;
+}
+.pulpit{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: solid 2px rgb(59, 117, 226);
+    height: 850px;
+    width: 802px;
+
+}
+.draw{
+    width: 798px;
+    height: 800px;
+}
+.menu{
+    background-color: rgb(59, 117, 226);
+    width: 800px;
+    height: 80px;
+    display: flex;
+}
+.btn{
+    background-color: rgb(59, 117, 226);
+    color: white;
+    padding: 5px 10px;
+    margin: 20px;
+    border: none;
+    cursor: pointer;
+}
+.close{
+    align-items: right;
+    margin-left: auto;
+}
