@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+    background-color: aliceblue;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 380px;
+    border-radius: 10px;
+    box-shadow: 2px 1px 2px 2px rgba(0, 0, 0, 0.3);
+    background-color: white;
+}
+.mac{
+    height: 190px;
+    width: 335px;
+    border-radius: 10px 10px 0 0;
+}
+.photo{
+    display: flex;
+    justify-content: center;
+}
+.loading{
+    opacity: 0;
+}
+.text{
+    margin-top: 30px;
+    text-align: left;
+    padding: 0 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    animation: loadingAnimation 2s infinite;
+}
+.user{
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.profile{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 10px;
+}
+i{
+    margin: 10px;
+}
+.skeleton{
+    position: relative;
+    background: #e0e0e0;
+    color:#e0e0e0 ;
+    overflow: hidden;
+    border-radius: 8px;
+}
+.skeleton::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -150px;
+    width: 100px;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.6), transparent);
+    animation: shimmer 1.5s infinite;
+}
+@keyframes shimmer{
+    0%{
+        transform: translateX(-150%);
+    }
+    100%{
+        transform: translateX(400%);
+    }
+}
