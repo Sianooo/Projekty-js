@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let us know your feedback</title>
+    <link rel="stylesheet" href="styl.css">
+</head>
+<body>
+    <div class="container">
+        <div class="reactionFeedback">
+            <p>How satisfied are u with ur <br> customer support performance?</p>
+            <div class="buttonFolder">
+                <button id="unhappy" class="reactionFeedbackBnt" type="button"><span style="font-size: 50px;">😢</span> <br> Unhappy</button>
+                <button id="neutral" class="reactionFeedbackBnt" type="button"><span style="font-size: 50px;">🤨</span> <br> Neutral</button>
+                <button id="satisfied" class="reactionFeedbackBnt" type="button"><span style="font-size: 50px;">😁</span> <br> Satisfied</button>
+            </div>
+            <button id="sendReview">Send Review</button>
+        </div>
+        <div class="feedbackSend" style="display: none;">
+            <span class="emoji" style="font-size: 50px;">❤️</span>
+            <p>Thank you</p>
+            <p id="feedbackID"></p>
+            <p>We'll use your feedback to improve our <br> customer support</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
